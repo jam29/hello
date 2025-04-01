@@ -6,11 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/your-repo/my-node-app.git'
-            }
-        }
 
         stage('Install') {
             steps {
